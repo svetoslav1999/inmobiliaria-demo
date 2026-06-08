@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InmobilarIA — El sistema operativo inteligente para inmobiliarias</title>
-  <meta name="description" content="CRM inmobiliario premium con IA: captación, gestión, automatización, calculadoras financieras (capacidad de compra y análisis de inversión con ROI y cash flow) y cierre en una sola plataforma. Recorrido visual del producto." />
+  <title>InmobilarIA — El sistema operativo de la agencia inmobiliaria moderna</title>
+  <meta name="description" content="CRM inmobiliario con IA: pipeline visual, lead scoring, agente WhatsApp, home staging IA, calculadoras financieras profesionales y analítica avanzada. Todo en una sola plataforma." />
   <link rel="icon" href="assets/icon.png" />
   <meta property="og:title" content="InmobilarIA — CRM inmobiliario con IA" />
-  <meta property="og:description" content="Captación, CRM, contenido con IA y cierre en una sola plataforma." />
-  <meta property="og:image" content="assets/screenshots/dashboard.png" />
+  <meta property="og:description" content="Pipeline visual, captación 24/7, home staging IA y calculadoras financieras profesionales en una sola plataforma." />
+  <meta property="og:image" content="assets/screenshots/dashboard-fhd.png" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- NAV -->
   <header class="nav" id="nav">
     <div class="container nav-inner">
@@ -23,81 +24,369 @@
         <img src="assets/icon.png" alt="InmobilarIA" />
         <span>InmobilarIA</span>
       </a>
-      <nav class="nav-links">
+      <nav class="nav-links" id="navLinks">
         <a href="#features">Funcionalidades</a>
+        <a href="#modules">Módulos</a>
         <a href="#calculadoras">Calculadoras</a>
         <a href="#gallery">Capturas</a>
-        <a href="#usecases">Casos de uso</a>
         <a href="#roadmap">Roadmap</a>
       </nav>
-      <a class="btn btn-primary btn-sm" href="https://github.com/svetoslav1999/InmobiliariaAI-showcase" target="_blank" rel="noopener">Ver showcase</a>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm" href="https://github.com/svetoslav1999/InmobiliariaAI-showcase" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          Ver showcase
+        </a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="top">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+    </div>
     <div class="container hero-inner">
-      <span class="badge">⚡ CRM inmobiliario con IA · Multi-tenant</span>
-      <h1>El sistema operativo inteligente para <span class="grad">inmobiliarias modernas</span></h1>
-      <p class="lead">Captación, CRM, contenido con IA y cierre — en una sola plataforma web y de escritorio. Menos fricción, más operaciones cerradas.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#gallery">Ver el producto</a>
-        <a class="btn btn-ghost" href="#features">Explorar funcionalidades</a>
+      <div class="hero-content">
+        <div class="badge reveal">
+          <span class="badge-dot"></span>
+          CRM inmobiliario con IA · Multi-tenant
+        </div>
+        <h1 class="reveal" style="--delay:80ms">
+          El sistema operativo de la <span class="grad">agencia moderna</span>
+        </h1>
+        <p class="lead reveal" style="--delay:160ms">
+          Pipeline visual, captación 24/7, home staging con IA, calculadoras financieras y analítica avanzada. Todo integrado, sin herramientas dispersas.
+        </p>
+        <div class="hero-cta reveal" style="--delay:240ms">
+          <a class="btn btn-primary" href="#modules">Explorar módulos</a>
+          <a class="btn btn-ghost" href="#gallery">Ver capturas</a>
+        </div>
+        <p class="demo-note reveal" style="--delay:320ms">Recorrido visual con <strong>datos de demostración</strong> · Código fuente privado</p>
       </div>
-      <div class="hero-shot">
-        <img src="assets/screenshots/dashboard.png" alt="Dashboard de InmobilarIA" loading="lazy" />
+      <div class="hero-visual reveal" style="--delay:200ms">
+        <div class="browser-frame">
+          <div class="browser-chrome">
+            <div class="browser-dots">
+              <span style="background:#ff5f57"></span>
+              <span style="background:#febc2e"></span>
+              <span style="background:#28c840"></span>
+            </div>
+            <div class="browser-url"><span>inmobiliaria.app/dashboard</span></div>
+          </div>
+          <img src="assets/screenshots/dashboard-fhd.png" alt="Dashboard de InmobilarIA" loading="eager" />
+        </div>
+        <div class="float-card float-1">
+          <div class="float-icon float-icon-blue">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          </div>
+          <div>
+            <div class="float-val">1.200+</div>
+            <div class="float-label">Propiedades gestionadas</div>
+          </div>
+        </div>
+        <div class="float-card float-2">
+          <div class="float-icon float-icon-green">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div>
+            <div class="float-val">5.000+</div>
+            <div class="float-label">Contactos en CRM</div>
+          </div>
+        </div>
+        <div class="float-card float-3">
+          <div class="float-icon float-icon-purple">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div>
+            <div class="float-val">Lead Scoring</div>
+            <div class="float-label">Priorización IA</div>
+          </div>
+        </div>
       </div>
-      <p class="demo-note">Recorrido visual con <strong>datos de demostración</strong>. Sin backend ni datos reales.</p>
     </div>
   </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="container stats-inner">
+      <div class="stat reveal"><span class="stat-n">12</span><span class="stat-label">módulos integrados</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat reveal" style="--delay:60ms"><span class="stat-n">5</span><span class="stat-label">calculadoras financieras</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat reveal" style="--delay:120ms"><span class="stat-n">100%</span><span class="stat-label">datos reales de demo</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat reveal" style="--delay:180ms"><span class="stat-n">AI</span><span class="stat-label">Anthropic Claude</span></div>
+    </div>
+  </div>
 
   <!-- PROBLEM / BENEFITS -->
   <section class="section" id="problem">
     <div class="container">
-      <h2 class="section-title">El problema que resuelve</h2>
-      <p class="section-sub">Las agencias pierden operaciones por fricción: leads sin seguir, tareas manuales, contenido lento y datos dispersos. InmobilarIA lo centraliza y delega lo repetitivo en IA.</p>
-      <div class="cards">
-        <div class="card"><div class="card-ico">🎯</div><h3>Más cierres</h3><p>Pipeline visual con priorización por IA para no perder ninguna oportunidad.</p></div>
-        <div class="card"><div class="card-ico">💬</div><h3>Captación 24/7</h3><p>Agente de WhatsApp que responde y cualifica leads de forma automática.</p></div>
-        <div class="card"><div class="card-ico">🎨</div><h3>Contenido en minutos</h3><p>Anuncios, home staging y vídeo generados con IA, no en días.</p></div>
-        <div class="card"><div class="card-ico">📊</div><h3>Decisiones con datos</h3><p>Analítica en tiempo real del embudo comercial de cada agencia.</p></div>
+      <div class="section-head reveal">
+        <span class="eyebrow">El problema</span>
+        <h2 class="section-title">Las agencias pierden operaciones por fricción</h2>
+        <p class="section-sub">Leads sin seguir, tareas manuales, contenido lento y datos dispersos en cinco herramientas distintas. InmobilarIA lo centraliza y delega lo repetitivo en IA.</p>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-ico">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Más operaciones cerradas</h3>
+          <p>Pipeline visual con lead scoring IA para priorizar los contactos con mayor probabilidad de cierre, sin perder ninguna oportunidad.</p>
+        </div>
+        <div class="benefit-card reveal" style="--delay:80ms">
+          <div class="benefit-ico">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Captación 24/7</h3>
+          <p>Agente de WhatsApp que responde, cualifica y agenda visitas fuera de horario, de forma completamente autónoma.</p>
+        </div>
+        <div class="benefit-card reveal" style="--delay:160ms">
+          <div class="benefit-ico">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Contenido en minutos</h3>
+          <p>Anuncios, home staging y vídeo generados por IA generativa. Lo que tardaba días, ahora son minutos.</p>
+        </div>
+        <div class="benefit-card reveal" style="--delay:240ms">
+          <div class="benefit-ico">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Decisiones con datos</h3>
+          <p>Analytics de embudo en tiempo real: tasa de conversión, rendimiento por agente y evolución mensual del negocio.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FEATURES -->
-  <section class="section alt" id="features">
+  <section class="section section-alt" id="features">
     <div class="container">
-      <h2 class="section-title">Funcionalidades de alto nivel</h2>
+      <div class="section-head reveal">
+        <span class="eyebrow">Funcionalidades</span>
+        <h2 class="section-title">Todo lo que necesita una agencia moderna</h2>
+      </div>
       <div class="feat-grid">
-        <div class="feat"><span>🤖</span><h3>IA en todo el flujo</h3><p>Lead scoring, asistente comercial, agente de WhatsApp, tasación visual y generación de contenido.</p></div>
-        <div class="feat"><span>🏡</span><h3>Mapas inteligentes</h3><p>Miles de propiedades en mapa sin lag, con agrupación dinámica.</p></div>
-        <div class="feat"><span>👥</span><h3>Gestión de equipo</h3><p>Perfiles de agente, asignaciones, permisos por rol y métricas reales.</p></div>
-        <div class="feat"><span>📄</span><h3>Contratos PDF premium</h3><p>Documentos corporativos listos para cliente.</p></div>
-        <div class="feat"><span>⚡</span><h3>Automatizaciones</h3><p>Reglas por evento para nutrir leads sin intervención manual.</p></div>
-        <div class="feat"><span>🛡️</span><h3>Cumplimiento RGPD / AI Act</h3><p>Consentimiento, páginas legales y gestión de datos personales.</p></div>
-        <div class="feat"><span>🧮</span><h3>Calculadoras financieras</h3><p>Hipoteca, gastos, rentabilidad, <strong>capacidad de compra</strong> y <strong>análisis de inversión</strong> (ROI, cash flow) con exportación a PDF.</p></div>
+        <div class="feat reveal">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg></div>
+          <h3>Lead Scoring IA</h3>
+          <p>Puntuación automática de contactos según comportamiento e intención de compra.</p>
+        </div>
+        <div class="feat reveal" style="--delay:40ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Mapa interactivo</h3>
+          <p>Miles de propiedades sin lag, con clustering dinámico y filtros avanzados.</p>
+        </div>
+        <div class="feat reveal" style="--delay:80ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+          <h3>Gestión de equipo</h3>
+          <p>Perfiles, asignaciones, métricas individuales y permisos por rol.</p>
+        </div>
+        <div class="feat reveal" style="--delay:120ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+          <h3>Contratos PDF premium</h3>
+          <p>Contratos corporativos firmables generados en segundos.</p>
+        </div>
+        <div class="feat reveal" style="--delay:160ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Automatizaciones</h3>
+          <p>Reglas por evento: nutrir leads, asignar tareas y enviar notificaciones.</p>
+        </div>
+        <div class="feat reveal" style="--delay:200ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>RGPD / AI Act</h3>
+          <p>Consentimiento, páginas legales y gestión de datos personales integrados.</p>
+        </div>
+        <div class="feat reveal" style="--delay:240ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg></div>
+          <h3>Multi-tenant</h3>
+          <p>Cada organización opera con datos completamente aislados.</p>
+        </div>
+        <div class="feat reveal" style="--delay:280ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+          <h3>Home Staging IA</h3>
+          <p>Transformación de espacios vacíos en fotos de producto premium.</p>
+        </div>
+        <div class="feat reveal" style="--delay:320ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+          <h3>Video Studio IA</h3>
+          <p>Vídeos de propiedades generados automáticamente desde las fotos.</p>
+        </div>
+        <div class="feat reveal" style="--delay:360ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <h3>Calculadoras financieras</h3>
+          <p>5 calculadoras: hipoteca, gastos, rentabilidad, capacidad de compra e inversión.</p>
+        </div>
+        <div class="feat reveal" style="--delay:400ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Visión IA</h3>
+          <p>Análisis visual de propiedades: descripción, tasación y puntos fuertes.</p>
+        </div>
+        <div class="feat reveal" style="--delay:440ms">
+          <div class="feat-ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <h3>WhatsApp Business IA</h3>
+          <p>Agente conversacional que cualifica leads y agenda visitas autónomamente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULE SHOWCASES -->
+  <section class="section" id="modules">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Módulos en profundidad</span>
+        <h2 class="section-title">Cada módulo, diseñado para ser el mejor</h2>
+        <p class="section-sub">No add-ons genéricos. Cada funcionalidad tiene la profundidad y la UX que los profesionales inmobiliarios necesitan.</p>
+      </div>
+
+      <div class="module-row reveal">
+        <div class="module-text">
+          <span class="module-tag">CRM &amp; Pipeline</span>
+          <h3>Embudo comercial inteligente</h3>
+          <p>Pipeline Kanban con drag-and-drop, 10 etapas configurables y priorización automática por IA. Cada contacto tiene historial completo, lead score en tiempo real y seguimiento de visitas.</p>
+          <ul class="module-list">
+            <li>Lead scoring con 8 señales de comportamiento</li>
+            <li>Historial de interacciones y tareas automáticas</li>
+            <li>Vista de mapa de clientes geolocalizados</li>
+            <li>Exportación y métricas de conversión</li>
+          </ul>
+        </div>
+        <div class="module-visual">
+          <div class="screenshot-frame">
+            <img src="assets/screenshots/pipeline.png" alt="Pipeline CRM" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="module-row module-row--reverse reveal">
+        <div class="module-text">
+          <span class="module-tag module-tag--ai">Centro de IA</span>
+          <h3>IA en el núcleo de la plataforma</h3>
+          <p>Asistente comercial basado en Claude (Anthropic), análisis de visión para propiedades, generación de anuncios, lead scoring automatizado y tasación visual. IA que realmente trabaja.</p>
+          <ul class="module-list">
+            <li>Asistente conversacional con contexto del CRM</li>
+            <li>Análisis visual de fotos de propiedades</li>
+            <li>Generación de descripciones y anuncios premium</li>
+            <li>Tasación automática con benchmarking de mercado</li>
+          </ul>
+        </div>
+        <div class="module-visual">
+          <div class="screenshot-frame">
+            <img src="assets/screenshots/ai-center.png" alt="Centro de IA" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="module-row reveal">
+        <div class="module-text">
+          <span class="module-tag module-tag--purple">Home Staging IA</span>
+          <h3>Transforma espacios con IA generativa</h3>
+          <p>Sube fotos de un inmueble vacío o sin amueblar y la IA genera fotos de producto con decoración premium en segundos. Sin fotógrafo, sin sesión de staging, sin días de espera.</p>
+          <ul class="module-list">
+            <li>Modelos de estilo: minimalista, nórdico, mediterráneo</li>
+            <li>Resultados en menos de 60 segundos</li>
+            <li>Descarga en alta resolución para portales</li>
+            <li>Integración directa con el generador de anuncios</li>
+          </ul>
+        </div>
+        <div class="module-visual">
+          <div class="screenshot-frame">
+            <img src="assets/screenshots/staging.png" alt="Home Staging IA" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="module-row module-row--reverse reveal">
+        <div class="module-text">
+          <span class="module-tag module-tag--amber">Analytics avanzado</span>
+          <h3>Analítica de negocio en tiempo real</h3>
+          <p>Dashboard completo del embudo comercial: nuevos leads, tasa de conversión, tiempo medio de cierre y rendimiento por agente. Toma decisiones con datos, no con intuición.</p>
+          <ul class="module-list">
+            <li>Métricas completas: leads → visitas → ofertas → cierres</li>
+            <li>Rendimiento comparativo de agentes</li>
+            <li>Análisis de portfolio de propiedades</li>
+            <li>Exportación de informes ejecutivos en PDF</li>
+          </ul>
+        </div>
+        <div class="module-visual">
+          <div class="screenshot-frame">
+            <img src="assets/screenshots/analytics.png" alt="Analytics" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="module-row reveal">
+        <div class="module-text">
+          <span class="module-tag module-tag--green">WhatsApp Business IA</span>
+          <h3>Captación autónoma fuera de horario</h3>
+          <p>Agente de IA que responde consultas, cualifica intención de compra y agenda visitas en WhatsApp Business. Sin intervención humana, sin perder un solo lead.</p>
+          <ul class="module-list">
+            <li>Respuestas contextuales basadas en el CRM</li>
+            <li>Cualificación automática: presupuesto, zona, tipología</li>
+            <li>Agenda de visitas integrada con el calendario</li>
+            <li>Handoff automático al agente cuando es necesario</li>
+          </ul>
+        </div>
+        <div class="module-visual">
+          <div class="screenshot-frame">
+            <img src="assets/screenshots/whatsapp.png" alt="WhatsApp Business IA" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="module-row module-row--reverse reveal">
+        <div class="module-text">
+          <span class="module-tag">Automatizaciones</span>
+          <h3>Workflows sin código para tu agencia</h3>
+          <p>Crea reglas por evento para nutrir leads, asignar tareas, enviar recordatorios y actualizar el pipeline de forma automática. Sin programar, sin fricción.</p>
+          <ul class="module-list">
+            <li>Triggers por evento: nuevo lead, visita agendada, sin actividad</li>
+            <li>Acciones: email, tarea, cambio de etapa, WhatsApp</li>
+            <li>Historial de ejecuciones y tasa de activación</li>
+            <li>Plantillas prediseñadas para los flujos más comunes</li>
+          </ul>
+        </div>
+        <div class="module-visual">
+          <div class="screenshot-frame">
+            <img src="assets/screenshots/automations.png" alt="Automatizaciones" loading="lazy" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CALCULADORAS -->
-  <section class="section" id="calculadoras">
+  <section class="section section-alt" id="calculadoras">
     <div class="container">
-      <h2 class="section-title">Calculadoras financieras profesionales</h2>
-      <p class="section-sub">Cinco calculadoras en un único módulo: del primer cálculo de hipoteca a la cualificación financiera del comprador y el análisis de inversión para inversores. Con exportación a <strong>PDF profesional, CSV e impresión</strong>.</p>
+      <div class="section-head reveal">
+        <span class="eyebrow">Calculadoras financieras</span>
+        <h2 class="section-title">Asesora financieramente a cada cliente</h2>
+        <p class="section-sub">Cinco calculadoras en un único módulo: desde el primer cálculo de hipoteca hasta la cualificación financiera del comprador y el análisis profesional de inversiones. Con exportación a <strong>PDF, CSV e impresión</strong>.</p>
+      </div>
 
-      <div class="calc-tabs">
-        <span class="calc-tab">🏦 Hipoteca</span>
-        <span class="calc-tab">🧾 Gastos de Compraventa</span>
-        <span class="calc-tab">📈 Rentabilidad</span>
-        <span class="calc-tab is-new">🎯 Capacidad de Compra</span>
-        <span class="calc-tab is-new">🏢 Rentabilidad Avanzada</span>
+      <div class="calc-tabs reveal">
+        <span class="calc-tab">Hipoteca</span>
+        <span class="calc-tab">Gastos Compraventa</span>
+        <span class="calc-tab">Rentabilidad</span>
+        <span class="calc-tab is-new">Capacidad de Compra</span>
+        <span class="calc-tab is-new">Rentabilidad Avanzada</span>
+      </div>
+
+      <div class="calc-screenshot reveal">
+        <div class="screenshot-frame screenshot-frame--wide">
+          <img src="assets/screenshots/calculators.png" alt="Calculadoras financieras — InmobilarIA" loading="lazy" />
+        </div>
       </div>
 
       <div class="calc-grid">
-        <!-- Capacidad de Compra -->
-        <article class="calc-card">
+        <article class="calc-card reveal">
           <header class="calc-head">
             <span class="calc-pill">Nuevo</span>
             <h3>Capacidad de Compra</h3>
@@ -117,8 +406,7 @@
           </ul>
         </article>
 
-        <!-- Rentabilidad Avanzada -->
-        <article class="calc-card">
+        <article class="calc-card reveal" style="--delay:80ms">
           <header class="calc-head">
             <span class="calc-pill">Nuevo</span>
             <h3>Rentabilidad Avanzada</h3>
@@ -144,23 +432,51 @@
   <!-- GALLERY -->
   <section class="section" id="gallery">
     <div class="container">
-      <h2 class="section-title">Recorrido visual</h2>
-      <p class="section-sub">Capturas reales de la aplicación · datos de demostración.</p>
-      <div class="gallery" id="galleryGrid">
-        <!-- filled by script.js -->
+      <div class="section-head reveal">
+        <span class="eyebrow">Recorrido visual</span>
+        <h2 class="section-title">Capturas reales del producto</h2>
+        <p class="section-sub">Datos de demostración · Resoluciones 1x, 2x y 3x según dispositivo</p>
       </div>
+      <div class="gallery-filters reveal">
+        <button class="gf-btn active" data-filter="all">Todo</button>
+        <button class="gf-btn" data-filter="crm">Dashboard &amp; CRM</button>
+        <button class="gf-btn" data-filter="properties">Propiedades</button>
+        <button class="gf-btn" data-filter="ai">IA &amp; Contenido</button>
+        <button class="gf-btn" data-filter="gestion">Gestión</button>
+        <button class="gf-btn" data-filter="mobile">Mobile &amp; Tablet</button>
+      </div>
+      <div class="gallery" id="galleryGrid"></div>
     </div>
   </section>
 
   <!-- USE CASES -->
-  <section class="section alt" id="usecases">
+  <section class="section section-alt" id="usecases">
     <div class="container">
-      <h2 class="section-title">Casos de uso</h2>
+      <div class="section-head reveal">
+        <span class="eyebrow">Casos de uso</span>
+        <h2 class="section-title">Para agencias de cualquier tamaño</h2>
+      </div>
       <div class="cards">
-        <div class="card"><h3>Agencia boutique</h3><p>Un equipo pequeño gestiona toda su cartera y cierra más rápido con priorización por IA.</p></div>
-        <div class="card"><h3>Red con varias oficinas</h3><p>Cada oficina opera aislada (multi-tenant) bajo una misma plataforma.</p></div>
-        <div class="card"><h3>Equipo de captación</h3><p>El agente de WhatsApp cualifica leads entrantes fuera de horario.</p></div>
-        <div class="card"><h3>Marketing inmobiliario</h3><p>Anuncios y home staging generados en minutos.</p></div>
+        <div class="card reveal">
+          <div class="card-ico"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+          <h3>Agencia boutique</h3>
+          <p>Un equipo pequeño gestiona toda su cartera y cierra más rápido con priorización IA y automatizaciones activas.</p>
+        </div>
+        <div class="card reveal" style="--delay:80ms">
+          <div class="card-ico"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg></div>
+          <h3>Red multi-oficina</h3>
+          <p>Cada oficina opera aislada (multi-tenant) bajo una misma plataforma, sin conflictos de datos.</p>
+        </div>
+        <div class="card reveal" style="--delay:160ms">
+          <div class="card-ico"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.23 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.14 1.14h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 8a16 16 0 006 6l.27-.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <h3>Equipo de captación</h3>
+          <p>El agente WhatsApp cualifica leads entrantes de forma autónoma fuera de horario comercial.</p>
+        </div>
+        <div class="card reveal" style="--delay:240ms">
+          <div class="card-ico"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <h3>Marketing inmobiliario</h3>
+          <p>Anuncios premium, home staging y vídeos generados en minutos con IA generativa.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -168,52 +484,70 @@
   <!-- STACK -->
   <section class="section" id="stack">
     <div class="container narrow">
-      <h2 class="section-title">Tecnología (alto nivel)</h2>
-      <p class="section-sub">Web moderna + aplicación de escritorio, con un backend de servicios y modelos de IA para las funciones inteligentes.</p>
-      <div class="chips">
-        <span>Frontend web</span><span>App de escritorio</span><span>API de servicios</span><span>IA · Anthropic Claude</span><span>Multi-tenant</span><span>Dark mode enterprise</span>
+      <div class="section-head reveal">
+        <span class="eyebrow">Tecnología</span>
+        <h2 class="section-title">Stack de nivel enterprise</h2>
+        <p class="section-sub">Aplicación web moderna y de escritorio, con backend de servicios y modelos de IA integrados para las funciones inteligentes.</p>
       </div>
-      <pre class="arch">Usuario
-   ↓
-Frontend (web / escritorio)
-   ↓
-API de servicios
-   ↓
-Base de datos</pre>
+      <div class="chips reveal">
+        <span>Frontend web</span><span>App de escritorio</span><span>API de servicios</span>
+        <span>IA · Anthropic Claude</span><span>Multi-tenant</span><span>Dark mode enterprise</span>
+        <span>Responsive / PWA</span><span>PDF generation</span>
+      </div>
+      <pre class="arch reveal">
+  Usuario
+     ↓
+  Frontend  (web / escritorio)
+     ↓
+  API de servicios
+     ↓
+  Base de datos  ←→  Modelos de IA
+      </pre>
       <p class="muted">El detalle de implementación, versiones, infraestructura y arquitectura interna se mantiene privado de forma intencionada.</p>
     </div>
   </section>
 
   <!-- ROADMAP -->
-  <section class="section alt" id="roadmap">
+  <section class="section section-alt" id="roadmap">
     <div class="container narrow">
-      <h2 class="section-title">Roadmap</h2>
+      <div class="section-head reveal">
+        <span class="eyebrow">Roadmap</span>
+        <h2 class="section-title">Próximas funcionalidades</h2>
+      </div>
       <ul class="roadmap">
-        <li>Integraciones con portales inmobiliarios (publicación multi-portal)</li>
-        <li>App móvil nativa</li>
-        <li>Firma electrónica de contratos</li>
-        <li>Marketplace de plantillas de automatización</li>
-        <li>Panel de analítica predictiva ampliado</li>
+        <li class="reveal"><span class="rm-dot"></span>Integraciones con portales inmobiliarios (publicación multi-portal)</li>
+        <li class="reveal" style="--delay:60ms"><span class="rm-dot"></span>App móvil nativa (iOS y Android)</li>
+        <li class="reveal" style="--delay:120ms"><span class="rm-dot"></span>Firma electrónica de contratos</li>
+        <li class="reveal" style="--delay:180ms"><span class="rm-dot"></span>Marketplace de plantillas de automatización</li>
+        <li class="reveal" style="--delay:240ms"><span class="rm-dot"></span>Panel de analítica predictiva ampliado</li>
       </ul>
     </div>
   </section>
 
   <!-- CTA / FOOTER -->
   <footer class="footer" id="contact">
+    <div class="footer-glow"></div>
     <div class="container footer-inner">
       <img src="assets/icon.png" alt="InmobilarIA" class="footer-logo" />
-      <h2>¿Quieres ver InmobilarIA en acción?</h2>
-      <p>El código fuente es privado. Este recorrido muestra el producto sin exponer su implementación.</p>
-      <a class="btn btn-primary" href="https://github.com/svetoslav1999/InmobiliariaAI-showcase" target="_blank" rel="noopener">Ver el showcase en GitHub</a>
+      <h2 class="reveal">¿Quieres ver InmobilarIA en acción?</h2>
+      <p class="reveal" style="--delay:80ms">El código fuente es privado. Este recorrido muestra el producto sin exponer su implementación.</p>
+      <a class="btn btn-primary btn-lg reveal" href="https://github.com/svetoslav1999/InmobiliariaAI-showcase" target="_blank" rel="noopener" style="--delay:160ms">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        Ver el showcase en GitHub
+      </a>
       <p class="copy">© InmobilarIA · Todos los derechos reservados</p>
     </div>
   </footer>
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" hidden>
-    <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
-    <img id="lbImg" src="" alt="" />
-    <p id="lbCaption"></p>
+    <button class="lb-close" id="lbClose" aria-label="Cerrar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lb-content">
+      <img id="lbImg" src="" alt="" />
+      <p id="lbCaption"></p>
+    </div>
   </div>
 
   <script src="script.js"></script>
