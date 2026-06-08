@@ -8,6 +8,7 @@ Recorrido visual del producto **InmobilarIA** (CRM inmobiliario con IA).
 
 Una **demo estática y 100% segura**: sitio HTML/CSS/JS sin backend, sin API y sin datos reales.
 Solo muestra la propuesta de valor, las funcionalidades de alto nivel y capturas con datos de demostración.
+Incluye una sección de **calculadoras financieras** (hipoteca, gastos, rentabilidad, **capacidad de compra** y **rentabilidad avanzada** con ROI, cash flow y análisis de inversión).
 
 - ❌ Sin código del producto real
 - ❌ Sin backend ni acceso a producción
